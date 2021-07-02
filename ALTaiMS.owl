@@ -1,250 +1,495 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-	xmlns="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#"
-	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xml="http://www.w3.org/XML/1998/namespace"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#"
+     xml:base="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims"/>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-</rdf:Description>
-<!--  -->
-<!--  -->
-<!-- ################################################################# -->
-<!-- # -->
-<!-- #    Classes -->
-<!-- # -->
-<!-- ################################################################# -->
-<!--  -->
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims# -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Performance Evaluation</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity -->
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiQuestion -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#isPartOfAims -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiQuestion">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro -->
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#isPartOfAims">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity"/>
+    </owl:AnnotationProperty>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Address risks and opportunities</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 6.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Arra -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Arra">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Assign roles, responsibilities and authorities</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 5.3</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ci -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ci">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">AIMS Continual improvement</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 10.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Cucd -->
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Cucd">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Create, update, and control documented information</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.5</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dar -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dar">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Determine and allocate resources for AIMS</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dc -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dc">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Determine AIMS communication</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.4</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dec -->
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity"/>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dec">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Determine and ensure competence of people affecting AI performance</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.2</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dlc -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dlc">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Demonstrate leadership and commitment to AIMS</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 5.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dnca -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dnca">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Detect non conformance and take corrective action</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 10.2</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ds -->
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity"/>
+    </owl:Class>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ds">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Determine AIMS scope</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.1</rdfs:seeAlso>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.3</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Eimi -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Eimi">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Establish, implement, maintain and continually improve AIMS</rdfs:label>
-	<rdfs:label xml:lang="en">Establish, implement, maintain and continually improve AIMS (Establish and implement AIMS processes)</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.4</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ep -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ep">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Establish AIMS policy</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 5.2</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Epao -->
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Activity"/>
+    </owl:Class>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Epao">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Establish and plan to achieve AI objectives</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 6.2</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ia -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ia">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Internal AIMS audit</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9.2</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Monitor, measure, analyse and evaluate AI</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pa -->
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PlanningActivity"/>
+        <rdfs:label xml:lang="en">Address risks and opportunities</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 6.1</rdfs:seeAlso>
+    </owl:Class>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pa">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Promote awareness</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.3</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pc -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pc">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Plan AIMS changes</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 6.3</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Arra -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Plan and control AI processes</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 8.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Umr -->
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Arra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#LeadershipActivity"/>
+        <rdfs:label xml:lang="en">Assign roles, responsibilities and authorities</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 5.3</rdfs:seeAlso>
+    </owl:Class>
+    
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Umr">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Undertake management review</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9.3</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Uoc -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Uoc">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Understanding organisation and its context</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.1</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
-<!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Usne -->
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ci -->
 
-<rdf:Description rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Usne">
-	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
-	<rdfs:label xml:lang="en">Understanding stakeholders needs and expectations</rdfs:label>
-	<rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.2</rdfs:seeAlso>
-</rdf:Description>
-<!--  -->
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ImprovementActivity"/>
+        <rdfs:label xml:lang="en">AIMS Continual improvement</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 10.1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ContextOfTheOrganizationActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ContextOfTheOrganizationActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Cucd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Cucd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity"/>
+        <rdfs:label xml:lang="en">Create, update, and control documented information</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.5</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity"/>
+        <rdfs:label xml:lang="en">Determine and allocate resources for AIMS</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity"/>
+        <rdfs:label xml:lang="en">Determine AIMS communication</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.4</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity"/>
+        <rdfs:label xml:lang="en">Determine and ensure competence of people affecting AI performance</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.2</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dlc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dlc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#LeadershipActivity"/>
+        <rdfs:label xml:lang="en">Demonstrate leadership and commitment to AIMS</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 5.1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dnca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Dnca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ImprovementActivity"/>
+        <rdfs:label xml:lang="en">Detect non conformance and take corrective action</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 10.2</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ContextOfTheOrganizationActivity"/>
+        <rdfs:label xml:lang="en">Determine AIMS scope</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.1</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.3</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Eimi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Eimi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ContextOfTheOrganizationActivity"/>
+        <rdfs:label xml:lang="en">Establish, implement, maintain and continually improve AIMS</rdfs:label>
+        <rdfs:label xml:lang="en">Establish, implement, maintain and continually improve AIMS (Establish and implement AIMS processes)</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.4</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ep">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#LeadershipActivity"/>
+        <rdfs:label xml:lang="en">Establish AIMS policy</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 5.2</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Epao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Epao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PlanningActivity"/>
+        <rdfs:label xml:lang="en">Establish and plan to achieve AI objectives</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 6.2</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FR2.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FR2.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to test and monitor for potential harm to children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Assess potential discrimination against people</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr1.1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr1.1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to test and monitor for bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr1.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr1.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to rectify bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Assess respecting rights of a child</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr2.1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr2.1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to rectify potential harm to children</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Assess protection of personal data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr3.1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr3.1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to assess  the need for a DPIA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr3.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr3.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish measures to ensure the protection of personal data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Assess respecting freedom of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr4.1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr4.1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to test and monitor for potential infringement on freedom of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr4.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Fr4.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Aro"/>
+        <isPartOfAims rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <rdfs:label xml:lang="en">Establish processes to rectify potential infringement on freedom of expression</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#FundamentalRightsActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#HumanAgencyAndOversightActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#HumanAgencyAndOversightActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AltaiActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Ia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PerformanceEvaluationActivity"/>
+        <rdfs:label xml:lang="en">Internal AIMS audit</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9.2</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ImprovementActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ImprovementActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#LeadershipActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#LeadershipActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Mmae">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PerformanceEvaluationActivity"/>
+        <rdfs:label xml:lang="en">Monitor, measure, analyse and evaluate AI</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9.1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#OperationActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#OperationActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity"/>
+        <rdfs:label xml:lang="en">Promote awareness</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 7.3</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PlanningActivity"/>
+        <rdfs:label xml:lang="en">Plan AIMS changes</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 6.3</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Pcp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#OperationActivity"/>
+        <rdfs:label xml:lang="en">Plan and control AI processes</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 8.1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PerformanceEvaluationActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PerformanceEvaluationActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PlanningActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PlanningActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#SupportActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#AimsActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Umr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Umr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#PerformanceEvaluationActivity"/>
+        <rdfs:label xml:lang="en">Undertake management review</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 9.3</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Uoc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Uoc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ContextOfTheOrganizationActivity"/>
+        <rdfs:label xml:lang="en">Understanding organisation and its context</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Usne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#Usne">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/delaram/ontologies/2021/6/altaims#ContextOfTheOrganizationActivity"/>
+        <rdfs:label xml:lang="en">Understanding stakeholders needs and expectations</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO MSS harmonised structure clause 4.2</rdfs:seeAlso>
+    </owl:Class>
+</rdf:RDF>
+
+
+
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
-</rdf:RDF>
